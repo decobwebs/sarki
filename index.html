@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <title>ALL FREIGHT SUPPORT SERVICES LTD</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Live Background Canvas */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 600px;
+            background: linear-gradient(135deg, #333, #000); /* Dark gradient */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: -75px;
+            background: #fff;
+        }
+
+        .card h2,
+        .card h3 {
+            color: #fff;
+        }
+
+        .card h4 {
+            color: #70b77e;
+        }
+
+        .card p {
+            color: #ccc;
+            margin: 20px 0;
+            font-size: 1em;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #70b77e;
+            margin: 0 15px;
+            font-size: 2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #50a050;
+            transform: scale(1.2);
+        }
+
+        .download-link {
+        margin-top: 30px;
+        text-decoration: none;
+        color: #fff;
+        background: black; /* Changed to black */
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-link:hover {
+        background: #333; /* Slightly lighter black for hover effect */
+        transform: translateY(-3px);
+    }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #ff7e5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #feb47b;
+        }
+
+        @media (max-width: 768px) {
+            .card img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .social-links a {
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+
+            .footer {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+
+            .navbar {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Live Background Canvas -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        Allfreight Support Services Limited
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Card -->
+        <div class="card">
+            <img src="static/img/CEO.jpg" alt="CEO Photo">
+
+            <h2>Bolaji Sunmola</h2>
+            <hr>
+            <h3>CEO & Founder</h3>
+            <h4>All Freight Support Services LTD</h4>
+
+            <div class="social-links">
+                <a href="https://wa.me/2348037272864" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="mailto:bolaji.sunmola@allfreightsupportservices.com" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://allfreightsupportservices.com/" target="_blank" title="Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bolaji-sunmola-stevedore-16348091" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="tel:+2348037272864" title="Call">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <br><br><br>
+                <a href="static/Bolaji_Sunmola.zip" download="BusinessCard_BolajiSunmola" title="Download Card" class="download-link">
+                    <i class="fas fa-download"></i> Download Card
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Designed By<a href="https://wa.me/2348155114430"> CobWeb</a>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize canvas
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Stars Animation
+        const stars = Array.from({ length: 100 }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 1.5 + 0.5,
+            speed: Math.random() * 0.5 + 0.1,
+        }));
+
+        function drawStar(star) {
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            ctx.fill();
+        }
+
+        function updateStars() {
+            stars.forEach((star) => {
+                star.y += star.speed;
+                if (star.y > canvas.height) star.y = 0;
+            });
+        }
+
+        function animate() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            stars.forEach(drawStar);
+            updateStars();
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+
+</html>
